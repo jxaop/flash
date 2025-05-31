@@ -1,3 +1,4 @@
 # flash
 
-vscode pasta atualizada
+--vscode pasta atualizada
+usei copilot para fazer o som
