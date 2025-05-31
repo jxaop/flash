@@ -56,7 +56,7 @@ body {
     transition: transform 600ms ease-in-out;
 }
 
-.cartao:hover {
+.cartao.virado {
     transform: rotateY(180deg);
 }
 
@@ -78,18 +78,22 @@ body {
 
 .conteudo {
 
+display: flex;
+justify-content: center;
+align-items: center;
 text-align: left;
 background-color: rgba(46, 50, 58, 0.807);
 border-radius: 10px;
 margin: 0.5rem 0;
-padding: 0.3rem;
-position: absolute;
+padding: 0.6rem;
 margin: 0.7rem;
-font-size: 1vw;   
+font-size: 1.0vw;   
 border: 1px solid var(--text-color); 
 transform-style: preserve-3d;
 transition: transform 600ms ease-in-out;
 backface-visibility: hidden;
+position: absolute;
+height: 20px;
 
 
 }
@@ -141,4 +145,39 @@ footer p {
     text-align: center;
     font-size: 0.9rem;
     margin-top: 0.8rem;
+}
+
+@media (max-width: 568px) {
+
+    body {
+        background-image: url('../img/bg2.jpg');
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    #container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center; 
+        padding: 0;
+        gap: 1rem;
+    }
+
+    .cartao {  
+        flex: none;
+        width: 90vw;              
+        max-width: 300px;         
+        margin: 1rem 0;
+    }
+
+    .cartao,
+    .conteudo,
+    .pergunta,
+    .resposta {
+        font-size: 4vw;
+        padding: 0.5rem;
+    }
 }
