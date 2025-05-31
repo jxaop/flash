@@ -1,3 +1,3 @@
 # flash
 
-background do site: Freepik
+<img src="/assets/img/y.gif">
